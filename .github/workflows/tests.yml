@@ -1,0 +1,38 @@
+name: tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  pytest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - name: Install
+        run: pip install -e ".[test]"
+      - name: Unit tests (synthetic signals only, no WESAD data; CNN tests skip without torch)
+        run: pytest
+      - name: Smoke test of the end-to-end script on synthetic data
+        run: python scripts/run_all.py --synthetic 2 --out /tmp/ahr-smoke
+
+  dl-tests:
+    # CNN shape / training-loop tests on tiny synthetic tensors (CPU-only torch wheel, no data)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - name: Install
+        run: |
+          pip install torch --index-url https://download.pytorch.org/whl/cpu
+          pip install -e ".[test,dl]"
+      - name: CNN and windowing tests
+        run: pytest tests/test_cnn.py tests/test_windows.py
