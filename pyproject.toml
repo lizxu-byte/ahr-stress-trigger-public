@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ahr"
+version = "0.1.0"
+description = "Additional heart rate (AHR) estimation and simulated real-time ESM triggering on wrist PPG + accelerometry"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "numpy>=1.24",
+    "scipy>=1.10",
+    "pandas>=2.0",
+    "statsmodels>=0.14",
+    "matplotlib>=3.7",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+# BIDMC cross-check against an independent implementation (version pinned for reproducibility)
+validation = ["neurokit2==0.3.0"]
+# deep / ML baseline on WESAD (CPU is enough); install torch from the CPU wheel index to keep it small
+dl = ["torch>=2.2", "scikit-learn>=1.3"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
