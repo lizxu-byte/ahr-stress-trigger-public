@@ -1,0 +1,123 @@
+{
+  "n_subjects": 6,
+  "example_subject": "SYN2",
+  "reference": "synthetic ground truth",
+  "feature_config": {
+    "win_s": 30.0,
+    "step_s": 5.0,
+    "invert_ppg": false,
+    "bp_low": 0.5,
+    "bp_high": 8.0,
+    "bp_order": 2,
+    "min_coverage": 0.5,
+    "min_template_corr": 0.8,
+    "min_template_corr_causal": 0.7,
+    "max_spectral_entropy": 0.75,
+    "acc_cutoff_hz": 0.5,
+    "motion_threshold_g": 0.1
+  },
+  "trigger_base": {
+    "threshold": 10.0,
+    "min_duration_s": 30.0,
+    "refractory_s": 1200.0,
+    "max_gap_s": 60.0,
+    "require_quality": true,
+    "block_motion": true
+  },
+  "fp_budget_per_h": 0.5,
+  "causal_vs_zero_phase_peak_lag_ms_median": 15.625,
+  "loso_primary": {
+    "AHR (wrist PPG) | anticipation 0 min": {
+      "hit_rate": 0.8333333333333334,
+      "fp_per_h": 0.0,
+      "other_prompts_per_h": 0.0,
+      "latency_s_median": 60.0,
+      "threshold_median": 6.0,
+      "threshold_range": [
+        6.0,
+        8.0
+      ]
+    },
+    "AHR (wrist PPG) | anticipation 10 min": {
+      "hit_rate": 0.8333333333333334,
+      "fp_per_h": 0.0,
+      "other_prompts_per_h": 0.0,
+      "latency_s_median": 60.0,
+      "threshold_median": 6.0,
+      "threshold_range": [
+        6.0,
+        8.0
+      ]
+    },
+    "HR - baseline (wrist PPG) | anticipation 0 min": {
+      "hit_rate": 0.8333333333333334,
+      "fp_per_h": 0.0,
+      "other_prompts_per_h": 0.0,
+      "latency_s_median": 55.0,
+      "threshold_median": 7.0,
+      "threshold_range": [
+        7.0,
+        11.0
+      ]
+    },
+    "HR - baseline (wrist PPG) | anticipation 10 min": {
+      "hit_rate": 0.8333333333333334,
+      "fp_per_h": 0.0,
+      "other_prompts_per_h": 0.0,
+      "latency_s_median": 55.0,
+      "threshold_median": 7.0,
+      "threshold_range": [
+        7.0,
+        11.0
+      ]
+    },
+    "AHR (reference HR) | anticipation 0 min": {
+      "hit_rate": 0.8333333333333334,
+      "fp_per_h": 0.0,
+      "other_prompts_per_h": 0.0,
+      "latency_s_median": 60.0,
+      "threshold_median": 6.0,
+      "threshold_range": [
+        6.0,
+        8.0
+      ]
+    },
+    "AHR (reference HR) | anticipation 10 min": {
+      "hit_rate": 0.8333333333333334,
+      "fp_per_h": 0.0,
+      "other_prompts_per_h": 0.0,
+      "latency_s_median": 60.0,
+      "threshold_median": 6.0,
+      "threshold_range": [
+        6.0,
+        8.0
+      ]
+    },
+    "HR - baseline (reference HR) | anticipation 0 min": {
+      "hit_rate": 0.8333333333333334,
+      "fp_per_h": 0.0,
+      "other_prompts_per_h": 0.0,
+      "latency_s_median": 55.0,
+      "threshold_median": 7.0,
+      "threshold_range": [
+        7.0,
+        11.0
+      ]
+    },
+    "HR - baseline (reference HR) | anticipation 10 min": {
+      "hit_rate": 0.8333333333333334,
+      "fp_per_h": 0.0,
+      "other_prompts_per_h": 0.0,
+      "latency_s_median": 55.0,
+      "threshold_median": 7.0,
+      "threshold_range": [
+        7.0,
+        11.0
+      ]
+    }
+  },
+  "calibration_activity_slope_sum_median": {
+    "ppg": 55.30762736200792,
+    "ecg": 55.30050373925447
+  }
+}

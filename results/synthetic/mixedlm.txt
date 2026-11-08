@@ -1,0 +1,99 @@
+===== mean_hr ~ condition + (1 | subject) =====
+                           Mixed Linear Model Regression Results
+============================================================================================
+Model:                          MixedLM             Dependent Variable:             mean_hr 
+No. Observations:               24                  Method:                         REML    
+No. Groups:                     6                   Scale:                          1.0097  
+Min. group size:                4                   Log-Likelihood:                 -43.9029
+Max. group size:                4                   Converged:                      Yes     
+Mean group size:                4.0                                                         
+--------------------------------------------------------------------------------------------
+                                                  Coef.  Std.Err.   z    P>|z| [0.025 0.975]
+--------------------------------------------------------------------------------------------
+Intercept                                         72.158    2.220 32.502 0.000 67.806 76.509
+C(condition, Treatment('baseline'))[T.amusement]   0.893    0.580  1.540 0.124 -0.244  2.030
+C(condition, Treatment('baseline'))[T.meditation] -3.002    0.580 -5.175 0.000 -4.139 -1.865
+C(condition, Treatment('baseline'))[T.stress]     10.078    0.580 17.371 0.000  8.941 11.215
+Group Var                                         28.564   20.940                           
+============================================================================================
+
+
+===== ahr ~ condition + (1 | subject) =====
+                           Mixed Linear Model Regression Results
+============================================================================================
+Model:                          MixedLM             Dependent Variable:             ahr     
+No. Observations:               24                  Method:                         REML    
+No. Groups:                     6                   Scale:                          1.0904  
+Min. group size:                4                   Log-Likelihood:                 -32.8918
+Max. group size:                4                   Converged:                      Yes     
+Mean group size:                4.0                                                         
+--------------------------------------------------------------------------------------------
+                                                  Coef.  Std.Err.   z    P>|z| [0.025 0.975]
+--------------------------------------------------------------------------------------------
+Intercept                                         -0.000    0.428 -0.000 1.000 -0.838  0.838
+C(condition, Treatment('baseline'))[T.amusement]   0.998    0.603  1.656 0.098 -0.183  2.180
+C(condition, Treatment('baseline'))[T.meditation] -2.043    0.603 -3.389 0.001 -3.225 -0.861
+C(condition, Treatment('baseline'))[T.stress]      9.846    0.603 16.332 0.000  8.665 11.028
+Group Var                                          0.007    0.186                           
+============================================================================================
+
+
+===== hr_ecg ~ condition + (1 | subject) =====
+                           Mixed Linear Model Regression Results
+============================================================================================
+Model:                          MixedLM             Dependent Variable:             hr_ecg  
+No. Observations:               24                  Method:                         REML    
+No. Groups:                     6                   Scale:                          1.0097  
+Min. group size:                4                   Log-Likelihood:                 -43.9032
+Max. group size:                4                   Converged:                      Yes     
+Mean group size:                4.0                                                         
+--------------------------------------------------------------------------------------------
+                                                  Coef.  Std.Err.   z    P>|z| [0.025 0.975]
+--------------------------------------------------------------------------------------------
+Intercept                                         72.158    2.220 32.501 0.000 67.807 76.510
+C(condition, Treatment('baseline'))[T.amusement]   0.893    0.580  1.539 0.124 -0.244  2.030
+C(condition, Treatment('baseline'))[T.meditation] -3.003    0.580 -5.175 0.000 -4.140 -1.865
+C(condition, Treatment('baseline'))[T.stress]     10.077    0.580 17.370 0.000  8.940 11.214
+Group Var                                         28.565   20.941                           
+============================================================================================
+
+
+===== ahr_ecg ~ condition + (1 | subject) =====
+                           Mixed Linear Model Regression Results
+============================================================================================
+Model:                          MixedLM             Dependent Variable:             ahr_ecg 
+No. Observations:               24                  Method:                         REML    
+No. Groups:                     6                   Scale:                          1.0898  
+Min. group size:                4                   Log-Likelihood:                 -32.8881
+Max. group size:                4                   Converged:                      Yes     
+Mean group size:                4.0                                                         
+--------------------------------------------------------------------------------------------
+                                                  Coef.  Std.Err.   z    P>|z| [0.025 0.975]
+--------------------------------------------------------------------------------------------
+Intercept                                         -0.000    0.428 -0.000 1.000 -0.838  0.838
+C(condition, Treatment('baseline'))[T.amusement]   0.998    0.603  1.656 0.098 -0.183  2.179
+C(condition, Treatment('baseline'))[T.meditation] -2.043    0.603 -3.390 0.001 -3.225 -0.862
+C(condition, Treatment('baseline'))[T.stress]      9.846    0.603 16.336 0.000  8.665 11.027
+Group Var                                          0.007    0.186                           
+============================================================================================
+
+
+===== hr_ecg_ppg_windows ~ condition + (1 | subject) =====
+                           Mixed Linear Model Regression Results
+============================================================================================
+Model:                      MixedLM          Dependent Variable:          hr_ecg_ppg_windows
+No. Observations:           24               Method:                      REML              
+No. Groups:                 6                Scale:                       1.0097            
+Min. group size:            4                Log-Likelihood:              -43.9032          
+Max. group size:            4                Converged:                   Yes               
+Mean group size:            4.0                                                             
+--------------------------------------------------------------------------------------------
+                                                  Coef.  Std.Err.   z    P>|z| [0.025 0.975]
+--------------------------------------------------------------------------------------------
+Intercept                                         72.158    2.220 32.501 0.000 67.807 76.510
+C(condition, Treatment('baseline'))[T.amusement]   0.893    0.580  1.539 0.124 -0.244  2.030
+C(condition, Treatment('baseline'))[T.meditation] -3.003    0.580 -5.175 0.000 -4.140 -1.865
+C(condition, Treatment('baseline'))[T.stress]     10.077    0.580 17.370 0.000  8.940 11.214
+Group Var                                         28.565   20.941                           
+============================================================================================
+

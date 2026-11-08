@@ -1,0 +1,5 @@
+condition,mean_hr_mean,mean_hr_std,mean_hr_n_subjects,ahr_mean,ahr_std,ahr_n_subjects,rmssd_mean,rmssd_std,rmssd_n_subjects,sdnn_mean,sdnn_std,sdnn_n_subjects,activity_mean,activity_std,activity_n_subjects,hr_ecg_mean,hr_ecg_std,hr_ecg_n_subjects,ahr_ecg_mean,ahr_ecg_std,ahr_ecg_n_subjects,hr_ecg_ppg_windows_mean,hr_ecg_ppg_windows_std,hr_ecg_ppg_windows_n_subjects
+baseline,72.16,5.27,6,-0.0,0.0,6,24.5,3.4,6,18.58,2.29,6,0.04,0.0,6,72.16,5.27,6,-0.0,0.0,6,72.16,5.27,6
+stress,82.24,5.71,6,9.85,2.09,6,18.24,2.07,6,14.25,1.49,6,0.04,0.01,6,82.24,5.72,6,9.85,2.09,6,82.24,5.72,6
+amusement,73.05,5.3,6,1.0,0.05,6,22.29,3.22,6,17.63,2.24,6,0.03,0.0,6,73.05,5.3,6,1.0,0.05,6,73.05,5.3,6
+meditation,69.16,5.46,6,-2.04,0.13,6,24.56,4.77,6,19.37,3.06,6,0.01,0.0,6,69.16,5.46,6,-2.04,0.13,6,69.16,5.46,6

@@ -1,0 +1,41 @@
+score,refractory_min,motion_gate,max_gap_s,anticipation_min,hit_rate,fp_per_h,other_prompts_per_h,latency_s_median,threshold_median,threshold_min,threshold_max,prompts_per_subject
+AHR (wrist PPG),20,True,60.0,0.0,0.833,0.0,0.0,60.0,6.0,6.0,8.0,0.833
+AHR (wrist PPG),20,True,60.0,10.0,0.833,0.0,0.0,60.0,6.0,6.0,8.0,0.833
+AHR (wrist PPG),10,True,60.0,0.0,0.833,0.0,0.0,60.0,6.0,6.0,8.0,0.833
+AHR (wrist PPG),10,True,60.0,10.0,0.833,0.0,0.0,60.0,6.0,6.0,8.0,0.833
+AHR (wrist PPG),30,True,60.0,0.0,0.833,0.0,0.0,60.0,6.0,6.0,8.0,0.833
+AHR (wrist PPG),30,True,60.0,10.0,0.833,0.0,0.0,60.0,6.0,6.0,8.0,0.833
+AHR (wrist PPG),20,False,60.0,0.0,0.833,0.0,0.0,60.0,6.0,6.0,8.0,0.833
+AHR (wrist PPG),20,False,60.0,10.0,0.833,0.0,0.0,60.0,6.0,6.0,8.0,0.833
+AHR (wrist PPG),20,True,0.0,0.0,0.833,0.0,0.0,60.0,6.0,6.0,8.0,0.833
+AHR (wrist PPG),20,True,0.0,10.0,0.833,0.0,0.0,60.0,6.0,6.0,8.0,0.833
+HR - baseline (wrist PPG),20,True,60.0,0.0,0.833,0.0,0.0,55.0,7.0,7.0,11.0,0.833
+HR - baseline (wrist PPG),20,True,60.0,10.0,0.833,0.0,0.0,55.0,7.0,7.0,11.0,0.833
+HR - baseline (wrist PPG),10,True,60.0,0.0,0.833,0.0,0.0,55.0,7.0,7.0,11.0,0.833
+HR - baseline (wrist PPG),10,True,60.0,10.0,0.833,0.0,0.0,55.0,7.0,7.0,11.0,0.833
+HR - baseline (wrist PPG),30,True,60.0,0.0,0.833,0.0,0.0,55.0,7.0,7.0,11.0,0.833
+HR - baseline (wrist PPG),30,True,60.0,10.0,0.833,0.0,0.0,55.0,7.0,7.0,11.0,0.833
+HR - baseline (wrist PPG),20,False,60.0,0.0,0.0,0.0,5.556,,13.0,12.0,13.0,1.667
+HR - baseline (wrist PPG),20,False,60.0,10.0,0.833,0.0,2.778,-40.0,12.0,12.0,13.0,1.667
+HR - baseline (wrist PPG),20,True,0.0,0.0,0.833,0.0,0.0,55.0,7.0,7.0,11.0,0.833
+HR - baseline (wrist PPG),20,True,0.0,10.0,0.833,0.0,0.0,55.0,7.0,7.0,11.0,0.833
+AHR (reference HR),20,True,60.0,0.0,0.833,0.0,0.0,60.0,6.0,6.0,8.0,0.833
+AHR (reference HR),20,True,60.0,10.0,0.833,0.0,0.0,60.0,6.0,6.0,8.0,0.833
+AHR (reference HR),10,True,60.0,0.0,0.833,0.0,0.0,60.0,6.0,6.0,8.0,0.833
+AHR (reference HR),10,True,60.0,10.0,0.833,0.0,0.0,60.0,6.0,6.0,8.0,0.833
+AHR (reference HR),30,True,60.0,0.0,0.833,0.0,0.0,60.0,6.0,6.0,8.0,0.833
+AHR (reference HR),30,True,60.0,10.0,0.833,0.0,0.0,60.0,6.0,6.0,8.0,0.833
+AHR (reference HR),20,False,60.0,0.0,0.833,0.0,0.0,60.0,6.0,6.0,8.0,0.833
+AHR (reference HR),20,False,60.0,10.0,0.833,0.0,0.0,60.0,6.0,6.0,8.0,0.833
+AHR (reference HR),20,True,0.0,0.0,0.833,0.0,0.0,60.0,6.0,6.0,8.0,0.833
+AHR (reference HR),20,True,0.0,10.0,0.833,0.0,0.0,60.0,6.0,6.0,8.0,0.833
+HR - baseline (reference HR),20,True,60.0,0.0,0.833,0.0,0.0,55.0,7.0,7.0,11.0,0.833
+HR - baseline (reference HR),20,True,60.0,10.0,0.833,0.0,0.0,55.0,7.0,7.0,11.0,0.833
+HR - baseline (reference HR),10,True,60.0,0.0,0.833,0.0,0.0,55.0,7.0,7.0,11.0,0.833
+HR - baseline (reference HR),10,True,60.0,10.0,0.833,0.0,0.0,55.0,7.0,7.0,11.0,0.833
+HR - baseline (reference HR),30,True,60.0,0.0,0.833,0.0,0.0,55.0,7.0,7.0,11.0,0.833
+HR - baseline (reference HR),30,True,60.0,10.0,0.833,0.0,0.0,55.0,7.0,7.0,11.0,0.833
+HR - baseline (reference HR),20,False,60.0,0.0,0.0,0.0,1.111,,20.0,12.0,20.0,0.333
+HR - baseline (reference HR),20,False,60.0,10.0,0.833,0.0,2.222,-40.0,11.0,11.0,12.0,1.5
+HR - baseline (reference HR),20,True,0.0,0.0,0.833,0.0,0.0,55.0,7.0,7.0,11.0,0.833
+HR - baseline (reference HR),20,True,0.0,10.0,0.833,0.0,0.0,55.0,7.0,7.0,11.0,0.833

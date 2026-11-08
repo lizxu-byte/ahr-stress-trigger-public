@@ -1,0 +1,49 @@
+held_out,selected_threshold,pre_s,n_episodes,n_hits,latency_s,n_false,n_other,other_h,nonstress_h,fp_per_h,n_prompts,score,anticipation_min
+SYN1,6.0,0.0,1,1,60.0,0,0,0.3,0.561,0.0,1,AHR (wrist PPG),0.0
+SYN2,6.0,0.0,1,1,60.0,0,0,0.3,0.561,0.0,1,AHR (wrist PPG),0.0
+SYN3,6.0,0.0,1,1,60.0,0,0,0.3,0.561,0.0,1,AHR (wrist PPG),0.0
+SYN4,6.0,0.0,1,1,80.0,0,0,0.3,0.561,0.0,1,AHR (wrist PPG),0.0
+SYN5,6.0,0.0,1,1,60.0,0,0,0.3,0.561,0.0,1,AHR (wrist PPG),0.0
+SYN6,8.0,0.0,1,0,,0,0,0.3,0.561,0.0,0,AHR (wrist PPG),0.0
+SYN1,6.0,600.0,1,1,60.0,0,0,0.3,0.561,0.0,1,AHR (wrist PPG),10.0
+SYN2,6.0,600.0,1,1,60.0,0,0,0.3,0.561,0.0,1,AHR (wrist PPG),10.0
+SYN3,6.0,600.0,1,1,60.0,0,0,0.3,0.561,0.0,1,AHR (wrist PPG),10.0
+SYN4,6.0,600.0,1,1,80.0,0,0,0.3,0.561,0.0,1,AHR (wrist PPG),10.0
+SYN5,6.0,600.0,1,1,60.0,0,0,0.3,0.561,0.0,1,AHR (wrist PPG),10.0
+SYN6,8.0,600.0,1,0,,0,0,0.3,0.561,0.0,0,AHR (wrist PPG),10.0
+SYN1,7.0,0.0,1,1,55.0,0,0,0.3,0.561,0.0,1,HR - baseline (wrist PPG),0.0
+SYN2,7.0,0.0,1,1,55.0,0,0,0.3,0.561,0.0,1,HR - baseline (wrist PPG),0.0
+SYN3,7.0,0.0,1,1,55.0,0,0,0.3,0.561,0.0,1,HR - baseline (wrist PPG),0.0
+SYN4,7.0,0.0,1,1,55.0,0,0,0.3,0.561,0.0,1,HR - baseline (wrist PPG),0.0
+SYN5,7.0,0.0,1,1,55.0,0,0,0.3,0.561,0.0,1,HR - baseline (wrist PPG),0.0
+SYN6,11.0,0.0,1,0,,0,0,0.3,0.561,0.0,0,HR - baseline (wrist PPG),0.0
+SYN1,7.0,600.0,1,1,55.0,0,0,0.3,0.561,0.0,1,HR - baseline (wrist PPG),10.0
+SYN2,7.0,600.0,1,1,55.0,0,0,0.3,0.561,0.0,1,HR - baseline (wrist PPG),10.0
+SYN3,7.0,600.0,1,1,55.0,0,0,0.3,0.561,0.0,1,HR - baseline (wrist PPG),10.0
+SYN4,7.0,600.0,1,1,55.0,0,0,0.3,0.561,0.0,1,HR - baseline (wrist PPG),10.0
+SYN5,7.0,600.0,1,1,55.0,0,0,0.3,0.561,0.0,1,HR - baseline (wrist PPG),10.0
+SYN6,11.0,600.0,1,0,,0,0,0.3,0.561,0.0,0,HR - baseline (wrist PPG),10.0
+SYN1,6.0,0.0,1,1,60.0,0,0,0.3,0.561,0.0,1,AHR (reference HR),0.0
+SYN2,6.0,0.0,1,1,60.0,0,0,0.3,0.561,0.0,1,AHR (reference HR),0.0
+SYN3,6.0,0.0,1,1,60.0,0,0,0.3,0.561,0.0,1,AHR (reference HR),0.0
+SYN4,6.0,0.0,1,1,80.0,0,0,0.3,0.561,0.0,1,AHR (reference HR),0.0
+SYN5,6.0,0.0,1,1,60.0,0,0,0.3,0.561,0.0,1,AHR (reference HR),0.0
+SYN6,8.0,0.0,1,0,,0,0,0.3,0.561,0.0,0,AHR (reference HR),0.0
+SYN1,6.0,600.0,1,1,60.0,0,0,0.3,0.561,0.0,1,AHR (reference HR),10.0
+SYN2,6.0,600.0,1,1,60.0,0,0,0.3,0.561,0.0,1,AHR (reference HR),10.0
+SYN3,6.0,600.0,1,1,60.0,0,0,0.3,0.561,0.0,1,AHR (reference HR),10.0
+SYN4,6.0,600.0,1,1,80.0,0,0,0.3,0.561,0.0,1,AHR (reference HR),10.0
+SYN5,6.0,600.0,1,1,60.0,0,0,0.3,0.561,0.0,1,AHR (reference HR),10.0
+SYN6,8.0,600.0,1,0,,0,0,0.3,0.561,0.0,0,AHR (reference HR),10.0
+SYN1,7.0,0.0,1,1,55.0,0,0,0.3,0.561,0.0,1,HR - baseline (reference HR),0.0
+SYN2,7.0,0.0,1,1,55.0,0,0,0.3,0.561,0.0,1,HR - baseline (reference HR),0.0
+SYN3,7.0,0.0,1,1,55.0,0,0,0.3,0.561,0.0,1,HR - baseline (reference HR),0.0
+SYN4,7.0,0.0,1,1,55.0,0,0,0.3,0.561,0.0,1,HR - baseline (reference HR),0.0
+SYN5,7.0,0.0,1,1,55.0,0,0,0.3,0.561,0.0,1,HR - baseline (reference HR),0.0
+SYN6,11.0,0.0,1,0,,0,0,0.3,0.561,0.0,0,HR - baseline (reference HR),0.0
+SYN1,7.0,600.0,1,1,55.0,0,0,0.3,0.561,0.0,1,HR - baseline (reference HR),10.0
+SYN2,7.0,600.0,1,1,55.0,0,0,0.3,0.561,0.0,1,HR - baseline (reference HR),10.0
+SYN3,7.0,600.0,1,1,55.0,0,0,0.3,0.561,0.0,1,HR - baseline (reference HR),10.0
+SYN4,7.0,600.0,1,1,55.0,0,0,0.3,0.561,0.0,1,HR - baseline (reference HR),10.0
+SYN5,7.0,600.0,1,1,55.0,0,0,0.3,0.561,0.0,1,HR - baseline (reference HR),10.0
+SYN6,11.0,600.0,1,0,,0,0,0.3,0.561,0.0,0,HR - baseline (reference HR),10.0
