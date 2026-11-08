@@ -1,0 +1,21 @@
+{
+  "dataset": "BIDMC PPG and Respiration Dataset v1.0.0 (PhysioNet, DOI 10.13026/C2208R, ODC-By 1.0)",
+  "n_records": 53,
+  "fs_hz": 125.0,
+  "neurokit2_version": "0.3.0",
+  "window_s": 30.0,
+  "beat_tolerances_ms": [
+    50.0,
+    100.0,
+    150.0
+  ],
+  "primary_tolerance_ms": 100.0,
+  "ecg_dispute_threshold_f1": 0.95,
+  "disputed_records": [
+    "bidmc03",
+    "bidmc06",
+    "bidmc13",
+    "bidmc33"
+  ],
+  "ppg_polarity": "upright (not inverted)"
+}

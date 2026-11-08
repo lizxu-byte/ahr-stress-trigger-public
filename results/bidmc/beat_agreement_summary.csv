@@ -1,0 +1,31 @@
+records,detector,tolerance_ms,n_records,n_ref_beats,sensitivity_pooled,ppv_pooled,f1_median,f1_q25,f1_q75,records_f1_ge_0.9,abs_err_ms_median,delay_ms_median
+all records,elgendi_offline,50.0,53,37592,0.958,0.9672,0.9807,0.9567,0.9925,49,8.0,648.0
+all records,elgendi_offline,100.0,53,37592,0.9724,0.9817,0.9889,0.9755,0.9954,50,8.0,648.0
+all records,elgendi_offline,150.0,53,37592,0.9788,0.9881,0.9926,0.9823,0.9966,51,8.0,648.0
+all records,prominence_offline,50.0,53,37592,0.9329,0.9716,0.9699,0.9477,0.9899,46,8.0,648.0
+all records,prominence_offline,100.0,53,37592,0.9443,0.9835,0.9762,0.9603,0.992,48,8.0,648.0
+all records,prominence_offline,150.0,53,37592,0.9495,0.9889,0.9809,0.9645,0.992,49,8.0,648.0
+all records,elgendi_causal,50.0,53,37592,0.9478,0.9785,0.9808,0.9474,0.9925,49,8.0,648.0
+all records,elgendi_causal,100.0,53,37592,0.9555,0.9864,0.9858,0.9569,0.9951,50,8.0,648.0
+all records,elgendi_causal,150.0,53,37592,0.9578,0.9888,0.9873,0.9619,0.9951,50,8.0,648.0
+all records,prominence_causal,50.0,53,37592,0.9487,0.9788,0.9794,0.9522,0.9936,47,8.0,648.0
+all records,prominence_causal,100.0,53,37592,0.9572,0.9876,0.9835,0.9652,0.9943,49,8.0,648.0
+all records,prominence_causal,150.0,53,37592,0.9594,0.9898,0.9855,0.9686,0.9943,49,8.0,648.0
+all records,neurokit_ppg,50.0,53,37592,0.9575,0.9674,0.9793,0.9574,0.9926,49,8.0,656.0
+all records,neurokit_ppg,100.0,53,37592,0.9719,0.9819,0.9884,0.974,0.9962,50,8.0,656.0
+all records,neurokit_ppg,150.0,53,37592,0.9782,0.9882,0.9928,0.9816,0.9972,51,8.0,656.0
+undisputed ECG reference,elgendi_offline,50.0,49,35253,0.9623,0.9753,0.9807,0.957,0.992,47,8.0,656.0
+undisputed ECG reference,elgendi_offline,100.0,49,35253,0.9763,0.9896,0.9889,0.9765,0.9954,48,8.0,656.0
+undisputed ECG reference,elgendi_offline,150.0,49,35253,0.9786,0.9919,0.9923,0.9823,0.9964,48,8.0,656.0
+undisputed ECG reference,prominence_offline,50.0,49,35253,0.9359,0.9795,0.9699,0.9499,0.9899,44,8.0,648.0
+undisputed ECG reference,prominence_offline,100.0,49,35253,0.947,0.9911,0.9762,0.9615,0.992,46,8.0,648.0
+undisputed ECG reference,prominence_offline,150.0,49,35253,0.9485,0.9926,0.9809,0.9645,0.992,46,8.0,648.0
+undisputed ECG reference,elgendi_causal,50.0,49,35253,0.9514,0.9852,0.9808,0.9481,0.9922,47,8.0,656.0
+undisputed ECG reference,elgendi_causal,100.0,49,35253,0.9564,0.9904,0.9858,0.9612,0.9951,47,8.0,656.0
+undisputed ECG reference,elgendi_causal,150.0,49,35253,0.9583,0.9924,0.9873,0.9628,0.9951,47,8.0,656.0
+undisputed ECG reference,prominence_causal,50.0,49,35253,0.9523,0.9874,0.9794,0.9547,0.9936,45,8.0,656.0
+undisputed ECG reference,prominence_causal,100.0,49,35253,0.9568,0.992,0.9835,0.9672,0.9943,46,8.0,656.0
+undisputed ECG reference,prominence_causal,150.0,49,35253,0.9584,0.9936,0.9855,0.9686,0.9943,46,8.0,656.0
+undisputed ECG reference,neurokit_ppg,50.0,49,35253,0.9618,0.9756,0.9793,0.9578,0.9926,47,8.0,656.0
+undisputed ECG reference,neurokit_ppg,100.0,49,35253,0.9759,0.9899,0.9884,0.9757,0.9962,48,8.0,656.0
+undisputed ECG reference,neurokit_ppg,150.0,49,35253,0.9782,0.9923,0.9928,0.9816,0.9964,48,8.0,656.0

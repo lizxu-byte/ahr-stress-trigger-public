@@ -1,0 +1,41 @@
+records,detector,reference,windows,coverage,n,bias,mae,sd,loa_low,loa_high,n_groups,share_abs_err_le_5bpm
+all records,elgendi_offline,ahr.ecg,all windows with HR,0.989,832,-0.18,0.349,1.078,-2.294,1.933,53,0.992
+all records,elgendi_offline,ahr.ecg,SQI ok,0.987,830,-0.18,0.349,1.08,-2.296,1.935,53,0.992
+all records,elgendi_offline,neurokit ecg,all windows with HR,0.993,818,-0.194,0.379,1.098,-2.345,1.957,52,0.994
+all records,elgendi_offline,neurokit ecg,SQI ok,0.99,816,-0.194,0.379,1.099,-2.348,1.959,52,0.994
+all records,prominence_offline,ahr.ecg,all windows with HR,0.971,817,-0.36,0.508,2.297,-4.861,4.141,53,0.985
+all records,prominence_offline,ahr.ecg,SQI ok,0.97,816,-0.36,0.508,2.299,-4.865,4.145,53,0.985
+all records,prominence_offline,neurokit ecg,all windows with HR,0.975,803,-0.379,0.54,2.343,-4.972,4.213,52,0.986
+all records,prominence_offline,neurokit ecg,SQI ok,0.973,802,-0.379,0.54,2.345,-4.975,4.217,52,0.986
+all records,elgendi_causal,ahr.ecg,all windows with HR,0.988,831,-0.312,0.533,2.291,-4.802,4.178,53,0.983
+all records,elgendi_causal,ahr.ecg,SQI ok,0.986,829,-0.313,0.534,2.294,-4.809,4.184,53,0.983
+all records,elgendi_causal,neurokit ecg,all windows with HR,0.99,816,-0.326,0.572,2.353,-4.939,4.286,52,0.985
+all records,elgendi_causal,neurokit ecg,SQI ok,0.988,814,-0.327,0.573,2.357,-4.946,4.292,52,0.985
+all records,prominence_causal,ahr.ecg,all windows with HR,0.989,832,-0.269,0.475,2.25,-4.678,4.141,53,0.987
+all records,prominence_causal,ahr.ecg,SQI ok,0.988,831,-0.269,0.476,2.251,-4.682,4.144,53,0.987
+all records,prominence_causal,neurokit ecg,all windows with HR,0.99,816,-0.293,0.484,2.266,-4.735,4.149,52,0.988
+all records,prominence_causal,neurokit ecg,SQI ok,0.989,815,-0.293,0.485,2.268,-4.739,4.152,52,0.988
+all records,neurokit_ppg,ahr.ecg,all windows with HR,0.988,831,-0.165,0.336,1.017,-2.158,1.829,53,0.993
+all records,neurokit_ppg,ahr.ecg,SQI ok,0.986,829,-0.165,0.336,1.018,-2.161,1.831,53,0.993
+all records,neurokit_ppg,neurokit ecg,all windows with HR,0.993,818,-0.191,0.377,1.093,-2.334,1.952,52,0.994
+all records,neurokit_ppg,neurokit ecg,SQI ok,0.99,816,-0.191,0.377,1.094,-2.336,1.954,52,0.994
+undisputed ECG reference,elgendi_offline,ahr.ecg,all windows with HR,0.996,776,-0.162,0.324,0.988,-2.099,1.775,49,0.995
+undisputed ECG reference,elgendi_offline,ahr.ecg,SQI ok,0.994,774,-0.162,0.323,0.989,-2.102,1.777,49,0.995
+undisputed ECG reference,elgendi_offline,neurokit ecg,all windows with HR,0.996,777,-0.181,0.357,1.078,-2.294,1.931,49,0.994
+undisputed ECG reference,elgendi_offline,neurokit ecg,SQI ok,0.994,775,-0.182,0.357,1.079,-2.296,1.933,49,0.994
+undisputed ECG reference,prominence_offline,ahr.ecg,all windows with HR,0.977,761,-0.35,0.505,2.353,-4.963,4.263,49,0.987
+undisputed ECG reference,prominence_offline,ahr.ecg,SQI ok,0.976,760,-0.35,0.505,2.356,-4.967,4.267,49,0.987
+undisputed ECG reference,prominence_offline,neurokit ecg,all windows with HR,0.977,762,-0.37,0.53,2.389,-5.053,4.313,49,0.986
+undisputed ECG reference,prominence_offline,neurokit ecg,SQI ok,0.976,761,-0.37,0.53,2.391,-5.057,4.317,49,0.986
+undisputed ECG reference,elgendi_causal,ahr.ecg,all windows with HR,0.992,773,-0.3,0.53,2.332,-4.871,4.271,49,0.986
+undisputed ECG reference,elgendi_causal,ahr.ecg,SQI ok,0.99,771,-0.301,0.531,2.336,-4.878,4.277,49,0.986
+undisputed ECG reference,elgendi_causal,neurokit ecg,all windows with HR,0.992,774,-0.317,0.554,2.365,-4.952,4.318,49,0.986
+undisputed ECG reference,elgendi_causal,neurokit ecg,SQI ok,0.99,772,-0.318,0.555,2.368,-4.959,4.324,49,0.986
+undisputed ECG reference,prominence_causal,ahr.ecg,all windows with HR,0.99,771,-0.282,0.46,2.296,-4.782,4.218,49,0.987
+undisputed ECG reference,prominence_causal,ahr.ecg,SQI ok,0.988,770,-0.283,0.461,2.298,-4.786,4.221,49,0.987
+undisputed ECG reference,prominence_causal,neurokit ecg,all windows with HR,0.99,772,-0.298,0.478,2.317,-4.84,4.244,49,0.987
+undisputed ECG reference,prominence_causal,neurokit ecg,SQI ok,0.988,771,-0.298,0.478,2.319,-4.844,4.248,49,0.987
+undisputed ECG reference,neurokit_ppg,ahr.ecg,all windows with HR,0.996,776,-0.159,0.323,0.988,-2.095,1.776,49,0.995
+undisputed ECG reference,neurokit_ppg,ahr.ecg,SQI ok,0.994,774,-0.16,0.323,0.989,-2.098,1.778,49,0.995
+undisputed ECG reference,neurokit_ppg,neurokit ecg,all windows with HR,0.996,777,-0.179,0.356,1.074,-2.283,1.926,49,0.994
+undisputed ECG reference,neurokit_ppg,neurokit ecg,SQI ok,0.994,775,-0.179,0.356,1.075,-2.286,1.928,49,0.994
