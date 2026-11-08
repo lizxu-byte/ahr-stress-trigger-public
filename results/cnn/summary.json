@@ -1,0 +1,52 @@
+{
+  "n_subjects": 15,
+  "window": {
+    "win_s": 60.0,
+    "step_s": 30.0,
+    "min_purity": 0.95,
+    "calibration_s": 300.0
+  },
+  "n_windows_usable": 2305,
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "cnn_train_config": {
+    "max_epochs": 40,
+    "patience": 8,
+    "batch_size": 32,
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "width": 16,
+    "dropout": 0.3
+  },
+  "cnn_n_parameters": {
+    "binary": 39106,
+    "three_class": 39171
+  },
+  "clip_sd": 10.0,
+  "inner_validation_subjects": 3,
+  "features": [
+    "hr",
+    "rmssd",
+    "sdnn",
+    "ahr",
+    "usable_frac",
+    "activity",
+    "activity_sd",
+    "eda_mean",
+    "eda_sd",
+    "eda_min",
+    "eda_max",
+    "eda_slope"
+  ],
+  "data_preparation_seconds": 0.3330566299998736,
+  "cpu": "x86_64",
+  "torch_threads": 4,
+  "versions": {
+    "torch": "2.15.0+cpu",
+    "sklearn": "1.9.1",
+    "numpy": "2.5.3"
+  }
+}

@@ -1,0 +1,9 @@
+task,model,variant,seconds_total,fits,seconds_per_fit
+binary,logreg + rf,calibrated,23.9,30,0.8
+binary,logreg + rf,calibrated_no_eda,23.59,30,0.79
+binary,logreg + rf,raw,23.27,30,0.78
+binary,cnn,calibrated,429.96,45,9.55
+three_class,logreg + rf,calibrated,25.02,30,0.83
+three_class,logreg + rf,calibrated_no_eda,25.84,30,0.86
+three_class,logreg + rf,raw,25.28,30,0.84
+three_class,cnn,calibrated,384.02,45,8.53
