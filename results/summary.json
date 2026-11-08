@@ -1,0 +1,123 @@
+{
+  "n_subjects": 15,
+  "example_subject": "S4",
+  "reference": "chest ECG",
+  "feature_config": {
+    "win_s": 30.0,
+    "step_s": 5.0,
+    "invert_ppg": true,
+    "bp_low": 0.5,
+    "bp_high": 8.0,
+    "bp_order": 2,
+    "min_coverage": 0.5,
+    "min_template_corr": 0.8,
+    "min_template_corr_causal": 0.7,
+    "max_spectral_entropy": 0.75,
+    "acc_cutoff_hz": 0.5,
+    "motion_threshold_g": 0.1
+  },
+  "trigger_base": {
+    "threshold": 10.0,
+    "min_duration_s": 30.0,
+    "refractory_s": 1200.0,
+    "max_gap_s": 60.0,
+    "require_quality": true,
+    "block_motion": true
+  },
+  "fp_budget_per_h": 0.5,
+  "causal_vs_zero_phase_peak_lag_ms_median": 0.0,
+  "loso_primary": {
+    "AHR (wrist PPG) | anticipation 0 min": {
+      "hit_rate": 0.26666666666666666,
+      "fp_per_h": 0.205761300071747,
+      "other_prompts_per_h": 0.8589836239885084,
+      "latency_s_median": 573.7178571428572,
+      "threshold_median": 13.0,
+      "threshold_range": [
+        13.0,
+        17.0
+      ]
+    },
+    "AHR (wrist PPG) | anticipation 10 min": {
+      "hit_rate": 0.5333333333333333,
+      "fp_per_h": 0.411522600143494,
+      "other_prompts_per_h": 0.34359344959540333,
+      "latency_s_median": 109.75714285714298,
+      "threshold_median": 13.0,
+      "threshold_range": [
+        10.0,
+        17.0
+      ]
+    },
+    "HR - baseline (wrist PPG) | anticipation 0 min": {
+      "hit_rate": 0.3333333333333333,
+      "fp_per_h": 0.3086419501076205,
+      "other_prompts_per_h": 0.8589836239885084,
+      "latency_s_median": 565.8042857142857,
+      "threshold_median": 13.0,
+      "threshold_range": [
+        13.0,
+        16.0
+      ]
+    },
+    "HR - baseline (wrist PPG) | anticipation 10 min": {
+      "hit_rate": 0.7333333333333333,
+      "fp_per_h": 0.3086419501076205,
+      "other_prompts_per_h": 0.4294918119942542,
+      "latency_s_median": 161.14571428571435,
+      "threshold_median": 13.0,
+      "threshold_range": [
+        13.0,
+        13.0
+      ]
+    },
+    "AHR (reference HR) | anticipation 0 min": {
+      "hit_rate": 0.5333333333333333,
+      "fp_per_h": 0.1028806500358735,
+      "other_prompts_per_h": 0.6012885367919558,
+      "latency_s_median": 418.28071428571434,
+      "threshold_median": 21.0,
+      "threshold_range": [
+        21.0,
+        21.0
+      ]
+    },
+    "AHR (reference HR) | anticipation 10 min": {
+      "hit_rate": 0.7333333333333333,
+      "fp_per_h": 0.411522600143494,
+      "other_prompts_per_h": 0.515390174393105,
+      "latency_s_median": -7.531428571428478,
+      "threshold_median": 15.0,
+      "threshold_range": [
+        12.0,
+        23.0
+      ]
+    },
+    "HR - baseline (reference HR) | anticipation 0 min": {
+      "hit_rate": 0.4666666666666667,
+      "fp_per_h": 0.0,
+      "other_prompts_per_h": 0.6871868991908067,
+      "latency_s_median": 399.09285714285716,
+      "threshold_median": 21.0,
+      "threshold_range": [
+        21.0,
+        22.0
+      ]
+    },
+    "HR - baseline (reference HR) | anticipation 10 min": {
+      "hit_rate": 0.8,
+      "fp_per_h": 0.205761300071747,
+      "other_prompts_per_h": 0.6012885367919558,
+      "latency_s_median": 5.8864285714287234,
+      "threshold_median": 14.0,
+      "threshold_range": [
+        14.0,
+        16.0
+      ]
+    }
+  },
+  "calibration_activity_slope_sum_median": {
+    "ppg": 33.78816871610926,
+    "ecg": 45.1735301559057
+  }
+}

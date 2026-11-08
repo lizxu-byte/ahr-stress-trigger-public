@@ -1,0 +1,5 @@
+condition,windows,ppg_hr_available,ppg_quality_ok,motion_flag,elgendi_vs_prominence_mad_bpm,ppg_vs_ref_mae_bpm_quality_ok,ppg_vs_ref_mae_bpm_all
+baseline,3438,0.946,0.811,0.043,0.203,1.07,1.351
+stress,1910,0.414,0.23,0.244,1.243,3.697,5.679
+amusement,1033,0.884,0.78,0.0,0.229,1.186,1.494
+meditation,2195,0.873,0.856,0.0,0.0,0.932,0.965

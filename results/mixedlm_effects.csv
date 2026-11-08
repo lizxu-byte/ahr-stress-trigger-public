@@ -1,0 +1,16 @@
+outcome,term,estimate,ci_low,ci_high,p
+mean_hr,amusement,-0.2284,-5.931,5.4743,0.9374
+mean_hr,meditation,-2.0878,-7.7904,3.6148,0.473
+mean_hr,stress,17.6345,11.5019,23.7672,0.0
+ahr,amusement,0.3735,-5.3899,6.1369,0.8989
+ahr,meditation,-1.5053,-7.2687,4.2581,0.6087
+ahr,stress,15.3134,9.1351,21.4916,0.0
+hr_ecg,amusement,0.4147,-6.3232,7.1526,0.904
+hr_ecg,meditation,-2.2906,-9.0285,4.4473,0.5052
+hr_ecg,stress,25.4496,18.7117,32.1875,0.0
+ahr_ecg,amusement,1.3021,-5.5336,8.1377,0.7089
+ahr_ecg,meditation,-1.016,-7.8516,5.8196,0.7708
+ahr_ecg,stress,22.7706,15.935,29.6062,0.0
+hr_ecg_ppg_windows,amusement,0.1292,-6.5449,6.8034,0.9697
+hr_ecg_ppg_windows,meditation,-2.0887,-8.7628,4.5854,0.5396
+hr_ecg_ppg_windows,stress,21.5554,14.3837,28.7272,0.0
