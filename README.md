@@ -94,7 +94,7 @@ plausible IBIs in all 15 subjects (mean share of accepted IBIs 0.76 vs 0.66).
 
 **Signal quality.** A window is usable when beat-template correlation ≥ 0.8 (offline) / ≥ 0.7
 (causal; the causal filter's non-linear phase distorts the pulse shape) and spectral entropy
-≤ 0.75. Thresholds were chosen by comparing wrist HR with chest-ECG HR (see *Parameter choices*).
+≤ 0.75. Thresholds were chosen by comparing wrist HR with chest-ECG HR (see *Parameters*).
 
 **Motion.** Gravity is removed from each accelerometer axis separately (0.5 Hz high-pass)
 *before* taking the vector magnitude; the window mean of that magnitude is the activity measure,
@@ -228,19 +228,18 @@ with no walking prompts. This is the situation AHR is designed for.
 
 ## PPG pipeline validation on BIDMC (fingertip PPG vs ECG)
 
-The WESAD results above check the wrist PPG only against the WESAD chest ECG. As an
-independent check, the same PPG code (`ahr.ppg`: band-pass, Elgendi and prominence detectors,
-IBI cleaning, windowed HR; `ahr.sqi`) runs unchanged on a second, public dataset with a different
+The same PPG code (`ahr.ppg`: band-pass, Elgendi and prominence detectors, IBI cleaning,
+windowed HR; `ahr.sqi`) runs unchanged on BIDMC, a second public dataset with a different
 sensor and population.
 
 **Data.** BIDMC PPG and Respiration Dataset, PhysioNet v1.0.0 (Pimentel et al., 2017;
 DOI 10.13026/C2208R; Open Data Commons Attribution License v1.0): 53 eight-minute recordings of
-adult ICU patients, extracted from MIMIC-II, fingertip PPG and ECG at 125 Hz (verified on the
-PhysioNet page and in every header: 125 Hz, 60 001 samples). Lead II, present in all records, is
+adult ICU patients, extracted from MIMIC-II, with fingertip PPG and ECG at 125 Hz
+(60 001 samples per recording). Lead II, present in all records, is
 the reference. `python scripts/download_bidmc.py` fetches the WFDB files into `data/bidmc/` and
 checks PhysioNet's SHA-256 sums; `python scripts/run_bidmc.py` writes `results/bidmc/` (~20 s).
-The PPG is used upright (clinical pulse-oximeter polarity; inverting it lowered beat agreement in
-the records checked during development).
+The PPG is used upright (clinical pulse-oximeter polarity; inverting it lowered beat agreement
+in the development comparisons).
 
 **Reference and cross-check.** Reference beats are R peaks from `ahr.ecg.detect_r_peaks`. NeuroKit2
 0.3.0 (pinned in the `[validation]` extra) gives a second ECG detector (`nk.ecg_peaks`) and a
@@ -291,17 +290,17 @@ differ by ≤ 0.04 bpm in MAE.)
 
 ![Bland-Altman, BIDMC](results/bidmc/figures/bland_altman.png)
 
-**What this shows and what it does not.** On clean, resting fingertip PPG, the in-house Elgendi
-implementation matches NeuroKit2's implementation and the ECG closely (MAE 0.35 bpm offline). The
-causal variant is somewhat worse: its wider limits come mostly from bidmc41, where for ~2 min it
+**BIDMC validation.** The BIDMC dataset is used to evaluate beat detection and heart-rate
+estimation on fingertip PPG recordings from ICU patients. It does not evaluate motion-corrupted
+wrist PPG.
+
+On clean, resting fingertip PPG, the Elgendi implementation closely matches NeuroKit2 and the
+ECG reference (MAE 0.35 bpm offline). The causal variant has wider limits of agreement, driven
+mainly by bidmc41, where for ~2 min it
 locks onto every other pulse (HR ~30 bpm too low, the outliers near −30 bpm in the figure) and the
 past-only IBI cleaning accepts the halved rate once it has persisted. The template-correlation SQI
-did not flag these windows. The signal-quality gate
-is almost never triggered here (830 of 832 offline windows pass), so **BIDMC does not test the
-SQI, the motion handling or the wrist**: ICU patients lie still and a fingertip clip has far better
-signal quality than the Empatica E4 during the TSST. The WESAD finding that wrist PPG fails during
-stress is therefore not contradicted; BIDMC only confirms that the peak detection and HR code are
-correct when the input signal is good.
+did not flag these windows. The signal-quality gate accepts 830 of 832 offline windows, so this
+validation does not assess SQI-gating performance.
 
 ## Deep baseline: 1D-CNN vs hand-crafted features (WESAD)
 
@@ -400,17 +399,19 @@ extraction and windowing for all 15 subjects take ~25 s (the result is cached in
    (amusement windows predicted as baseline: RF 70 / 161 pooled), as expected from a mild, short
    film condition.
 
-**Relation to published WESAD results.** Schmidt et al. (2018, Tables 3 and 4, numbers checked in
-the authors' PDF) report, for the wrist device with all modalities and a random forest, F1 84.11 %
+**Relation to published WESAD results.** Schmidt et al. (2018, Tables 3 and 4) report, for the
+wrist device with all modalities and a random forest, F1 84.11 %
 and accuracy 87.12 % on *stress vs non-stress*, and F1 62.86 % / accuracy 74.85 % on the three-class
 task (best wrist results: wrist physiological modalities with RF, F1 86.10 % / 88.33 % binary and
-66.33 % / 76.17 % three-class). These numbers are **not directly comparable** to the table above:
-their binary task merges baseline and amusement into "non-stress"; they use 60 s windows shifted by
+66.33 % / 76.17 % three-class).
+
+Schmidt et al. (2018) use a different binary class definition, windowing strategy, feature set and
+calibration procedure. Their results and those reported here therefore correspond to different
+evaluation protocols. Their binary task merges baseline and amusement into "non-stress";
+they use 60 s windows shifted by
 0.25 s, different features (including TEMP; ACC features on 5 s windows) and no per-subject
 calibration; their ± is the SD over 5 repeated runs, not over subjects; they report accuracy, not
-balanced accuracy; and the paper does not state how F1 is aggregated over LOSO folds. The ordering
-"classical features ≥ learned models on 15 subjects" is consistent with what we find; the absolute
-values are not a benchmark.
+balanced accuracy; and the paper does not state how F1 is aggregated over LOSO folds.
 
 ## Limitations
 
@@ -444,9 +445,9 @@ values are not a benchmark.
 * **BIDMC validation** covers resting ICU patients with a fingertip sensor: it checks the beat
   detection and HR code on clean signals, not wrist PPG under motion or the SQI gate.
 
-## Parameter choices to review
+## Parameters
 
-| Parameter | Value | Why / evidence |
+| Parameter | Value | Rationale |
 |---|---|---|
 | E4 BVP polarity | inverted | more plausible IBIs in 15/15 subjects |
 | analysis window / step | 30 s / 5 s | compromise between HR stability and trigger latency |
